@@ -1,4 +1,3 @@
-// ignore_for_file: camel_case_types
 import 'package:flutter/material.dart';
 import 'package:flutter_project_1/Pages/Sign%20In.dart';
 
