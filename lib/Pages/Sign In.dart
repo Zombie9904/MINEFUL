@@ -128,7 +128,7 @@ class _SignInState extends State<SignIn> {
                             ),
                           ),
                           SizedBox(
-                            height: 20,
+                            height: 30,
                           ),
                           GestureDetector(
                             onTap: () {
