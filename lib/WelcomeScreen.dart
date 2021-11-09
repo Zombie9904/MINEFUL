@@ -62,7 +62,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                         MaterialPageRoute(builder: (context) => SignIn()));
                   },
                   child: Text(
-                    "Sign In",
+                    "Sign In SI",
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
