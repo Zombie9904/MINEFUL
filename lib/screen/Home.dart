@@ -10,6 +10,27 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   @override
+  var Hello = "Welcome";
+  void HelloMessage() {
+    var now = DateTime.now();
+    if (now.hour == 13 ||
+        now.hour == 14 ||
+        now.hour == 15 ||
+        now.hour == 16 ||
+        now.hour == 17) {
+      Hello = "สวัสดียามบ่าย, ";
+    } else {
+      if (now.hour == 18 ||
+          now.hour == 19 ||
+          now.hour == 20 ||
+          now.hour == 21 ||
+          now.hour == 22 ||
+          now.hour == 23) {
+        Hello = "สวัสดียามเย็น, ";
+      }
+    }
+  }
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -21,7 +42,11 @@ class _HomeState extends State<Home> {
             Icons.person,
             color: Colors.black,
           ),
-          onPressed: () {},
+          onPressed: () {
+            setState(() {
+              HelloMessage();
+            });
+          },
         ),
         actions: [
           IconButton(
@@ -40,7 +65,7 @@ class _HomeState extends State<Home> {
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: Text(
-                "สวัสดียามดึก, Ronan",
+                Hello + "Ronan",
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
             ),
