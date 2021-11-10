@@ -13,7 +13,7 @@ class _HomeState extends State<Home> {
   void initState() {
     super.initState();
     HelloMessage();
-  }
+  } //Run when finished build
 
   var Hello = "Welcome";
   void HelloMessage() {
