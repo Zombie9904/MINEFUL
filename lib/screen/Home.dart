@@ -32,6 +32,8 @@ class _HomeState extends State<Home> {
           now.hour == 22 ||
           now.hour == 23) {
         Hello = "สวัสดียามเย็น, ";
+      } else {
+        Hello = "สวัสดียามเช้า, ";
       }
     }
   }
