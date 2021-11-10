@@ -10,6 +10,11 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   @override
+  void initState() {
+    super.initState();
+    HelloMessage();
+  }
+
   var Hello = "Welcome";
   void HelloMessage() {
     var now = DateTime.now();
@@ -31,6 +36,7 @@ class _HomeState extends State<Home> {
     }
   }
 
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
