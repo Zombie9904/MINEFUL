@@ -48,11 +48,7 @@ class _HomeState extends State<Home> {
             Icons.person,
             color: Colors.black,
           ),
-          onPressed: () {
-            setState(() {
-              HelloMessage();
-            });
-          },
+          onPressed: () {},
         ),
         actions: [
           IconButton(
