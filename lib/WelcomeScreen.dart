@@ -98,6 +98,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
   }
 }
 
+//Animation
 class AnimatedImage extends StatefulWidget {
   const AnimatedImage({Key? key}) : super(key: key);
 
