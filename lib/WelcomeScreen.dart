@@ -18,7 +18,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           Container(
             decoration: BoxDecoration(
                 image: DecorationImage(
-                    image: AssetImage('assets/images/BG4.png'),
+                    image: AssetImage('assets/images/BG5.png'),
                     fit: BoxFit.cover,
                     colorFilter:
                         ColorFilter.mode(Colors.white, BlendMode.darken))),
@@ -38,56 +38,65 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                   )),
             ),
             SizedBox(
-              height: 25,
+              height: 190,
             ),
             Padding(
               padding: EdgeInsets.all(25),
               child: Column(children: [
-                SizedBox(
-                  width: 400,
-                  height: 55,
-                  child: ElevatedButton(
-                    style: ElevatedButton.styleFrom(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15),
-                        ),
-                        primary: Colors.white),
-                    onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => SignIn()));
-                    },
-                    child: Text(
-                      "Sign In",
-                      style: TextStyle(
+                Opacity(
+                  opacity: 0.75,
+                  child: SizedBox(
+                    width: 400,
+                    height: 55,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(16),
+                          ),
+                          primary: Color(0xFFffd453)),
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => SignIn()));
+                      },
+                      child: Text(
+                        "Sign In",
+                        style: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
-                          fontSize: 20),
+                          fontSize: 20,
+                        ),
+                      ),
                     ),
                   ),
                 ),
                 SizedBox(
                   height: 20,
                 ),
-                SizedBox(
-                  width: 400,
-                  height: 55,
-                  child: ElevatedButton(
-                      style: ElevatedButton.styleFrom(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15),
-                          ),
-                          primary: Colors.grey[700]),
-                      onPressed: () {
-                        Navigator.push(context,
-                            MaterialPageRoute(builder: (context) => SignUp()));
-                      },
-                      child: Text(
-                        "Sign Up",
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20),
-                      )),
+                Opacity(
+                  opacity: 0.75,
+                  child: SizedBox(
+                    width: 400,
+                    height: 55,
+                    child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(16),
+                            ),
+                            primary: Colors.white),
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => SignUp()));
+                        },
+                        child: Text(
+                          "Sign Up",
+                          style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 20),
+                        )),
+                  ),
                 ),
               ]),
             )

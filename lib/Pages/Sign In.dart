@@ -95,7 +95,7 @@ class _SignInState extends State<SignIn> {
                           ),
                           SizedBox(
                             width: 400,
-                            height: 60,
+                            height: 55,
                             child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                   shape: RoundedRectangleBorder(
