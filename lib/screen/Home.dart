@@ -15,7 +15,9 @@ class _HomeState extends State<Home> {
     HelloMessage();
   } //Run when finished build
 
+  // ignore: non_constant_identifier_names
   var Hello = "Welcome";
+  // ignore: non_constant_identifier_names
   void HelloMessage() {
     var now = DateTime.now();
     if (now.hour == 13 ||
@@ -100,7 +102,7 @@ class _HomeState extends State<Home> {
                   ),
                 ),
               ),
-            ),
+            )
           ],
         ),
       ),
