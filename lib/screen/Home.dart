@@ -42,7 +42,7 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Test_1'),
+        title: Text('ทดสอบ Appbar'),
         backgroundColor: Colors.white,
         elevation: 0,
         leading: IconButton(
@@ -156,6 +156,59 @@ class _HomeState extends State<Home> {
             )
           ],
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(),
+    );
+  }
+}
+
+class BottomNavigationBar extends StatefulWidget {
+  const BottomNavigationBar({Key? key}) : super(key: key);
+
+  @override
+  _BottomNavigationBarState createState() => _BottomNavigationBarState();
+}
+
+class _BottomNavigationBarState extends State<BottomNavigationBar> {
+  @override
+  Widget build(BuildContext context) {
+    return DefaultTabController(
+      length: 4,
+      child: Container(
+        height: 75,
+        decoration: BoxDecoration(
+          color: Colors.black,
+          gradient: LinearGradient(
+            colors: [Colors.red.shade400, Colors.purple.shade400],
+            begin: Alignment.bottomRight,
+            end: Alignment.topLeft,
+          ),
+        ),
+        child: TabBar(indicatorColor: Colors.white, indicatorWeight: 3, tabs: [
+          Tab(
+              icon: Icon(
+                Icons.home,
+              ),
+              text: 'Home'),
+          Tab(
+            icon: Icon(
+              Icons.menu,
+            ),
+            text: 'Menu',
+          ),
+          Tab(
+            icon: Icon(
+              Icons.credit_card,
+            ),
+            text: 'Premium',
+          ),
+          Tab(
+            icon: Icon(
+              Icons.person,
+            ),
+            text: 'Profile',
+          ),
+        ]),
       ),
     );
   }
