@@ -153,7 +153,7 @@ class _HomeState extends State<Home> {
                 "Start your day",
                 style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
               ),
-            )
+            ),
           ],
         ),
       ),
@@ -184,43 +184,31 @@ class _BottomNavigationBarState extends State<BottomNavigationBar> {
             end: Alignment.topLeft,
           ),
         ),
-        child: TabBar(
-            indicatorColor: Colors.white,
-            indicatorWeight: 3,
-            onTap: (i) {
-              switch (i) {
-                case 2:
-                  print("SIWAGORN HUA KUAY!");
-
-                  break;
-                default:
-              }
-            },
-            tabs: [
-              Tab(
-                  icon: Icon(
-                    Icons.home,
-                  ),
-                  text: 'Home'),
-              Tab(
-                icon: Icon(
-                  Icons.menu,
-                ),
-                text: 'Menu',
+        child: TabBar(indicatorColor: Colors.white, indicatorWeight: 3, tabs: [
+          Tab(
+              icon: Icon(
+                Icons.home,
               ),
-              Tab(
-                icon: Icon(
-                  Icons.credit_card,
-                ),
-                text: 'Premium',
-              ),
-              Tab(
-                icon: Icon(
-                  Icons.person,
-                ),
-                text: 'Profile',
-              ),
-            ]),
+              text: 'Home'),
+          Tab(
+            icon: Icon(
+              Icons.menu,
+            ),
+            text: 'Menu',
+          ),
+          Tab(
+            icon: Icon(
+              Icons.credit_card,
+            ),
+            text: 'Premium',
+          ),
+          Tab(
+            icon: Icon(
+              Icons.person,
+            ),
+            text: 'Profile',
+          ),
+        ]),
       ),
     );
   }
