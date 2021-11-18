@@ -42,13 +42,13 @@ class _HomeState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        title: Text('Test_1'),
         backgroundColor: Colors.white,
         elevation: 0,
         leading: IconButton(
           padding: EdgeInsets.only(left: 10),
           icon: Icon(
-            Icons.person,
-            color: Colors.black,
+            Icons.menu,
           ),
           onPressed: () {},
         ),
@@ -56,11 +56,19 @@ class _HomeState extends State<Home> {
           IconButton(
             icon: Icon(
               Icons.search,
-              color: Colors.black,
             ),
             onPressed: () {},
-          )
+          ),
         ],
+        flexibleSpace: Container(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [Colors.red.shade400, Colors.purple.shade400],
+              begin: Alignment.bottomRight,
+              end: Alignment.topLeft,
+            ),
+          ),
+        ),
       ),
       body: SingleChildScrollView(
         child: Column(
