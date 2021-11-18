@@ -70,28 +70,58 @@ class _HomeState extends State<Home> {
           ),
         ),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(15.0),
-              child: Text(
-                Hello + "Ronan",
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-              ),
-            ),
-            SizedBox(
-              height: 5,
-            ),
-            Row(
-              children: [
-                SizedBox(
-                  width: 15,
+      body: TabBarView(
+        children: <Widget>[
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Text(
+                  Hello + "Ronan",
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                 ),
-                Padding(
-                  padding: const EdgeInsets.all(15.0),
-                  child: InkWell(
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Row(
+                children: [
+                  SizedBox(
+                    width: 15,
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(15.0),
+                    child: InkWell(
+                      child: Container(
+                        width: 150,
+                        height: 60,
+                        alignment: Alignment.center,
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.grey),
+                            borderRadius: BorderRadius.circular(10)),
+                        child: Row(
+                          children: [
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Icon(Icons.search),
+                            Text(
+                              "รายการโปรด",
+                              style: TextStyle(fontWeight: FontWeight.bold),
+                            )
+                          ],
+                        ),
+                      ),
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => Favourite()));
+                      },
+                    ),
+                  ),
+                  InkWell(
                     child: Container(
                       width: 150,
                       height: 60,
@@ -104,11 +134,12 @@ class _HomeState extends State<Home> {
                           SizedBox(
                             width: 10,
                           ),
-                          Icon(Icons.search),
+                          Icon(Icons.add),
                           Text(
-                            "รายการโปรด",
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          )
+                            "รายการล่าสุด",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 15),
+                          ),
                         ],
                       ),
                     ),
@@ -117,45 +148,18 @@ class _HomeState extends State<Home> {
                           MaterialPageRoute(builder: (context) => Favourite()));
                     },
                   ),
-                ),
-                InkWell(
-                  child: Container(
-                    width: 150,
-                    height: 60,
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                        border: Border.all(color: Colors.grey),
-                        borderRadius: BorderRadius.circular(10)),
-                    child: Row(
-                      children: [
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Icon(Icons.add),
-                        Text(
-                          "รายการล่าสุด",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 15),
-                        ),
-                      ],
-                    ),
-                  ),
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Favourite()));
-                  },
-                ),
-              ],
-            ),
-            Padding(
-              padding: const EdgeInsets.all(15.0),
-              child: Text(
-                "Start your day",
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                ],
               ),
-            ),
-          ],
-        ),
+              Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: Text(
+                  "Start your day",
+                  style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ],
+          ),
+        ],
       ),
       bottomNavigationBar: BottomNavigationBar(),
     );
