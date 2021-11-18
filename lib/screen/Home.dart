@@ -190,6 +190,7 @@ class _BottomNavigationBarState extends State<BottomNavigationBar> {
             onTap: (i) {
               switch (i) {
                 case 2:
+                  Favourite();
                   print("SIWAGORN หน้า*ี");
                   break;
                 default:
