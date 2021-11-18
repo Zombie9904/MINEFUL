@@ -39,48 +39,63 @@ class _P1State extends State<P1> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: SingleChildScrollView(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(15.0),
-                child: Text(
-                  Hello + "Ronan",
-                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-                ),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('หน้า1'),
+        leading: IconButton(
+          icon: Icon(Icons.menu),
+          color: Colors.black,
+          onPressed: () {},
+        ),
+        actions: [
+          IconButton(
+            icon: Icon(Icons.person),
+            color: Colors.black,
+            onPressed: () {},
+          )
+        ],
+        backgroundColor: Colors.white,
+        elevation: 0,
+      ),
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: Text(
+                Hello + "Ronan",
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
-              Container(
-                child: Padding(
-                  padding: const EdgeInsets.all(15.0),
-                  child: TextFormField(
-                    enabled: true,
-                    keyboardType: TextInputType.emailAddress,
-                    decoration: InputDecoration(
-                      enabledBorder: OutlineInputBorder(
-                        borderSide: BorderSide(
-                          color: Colors.red,
-                          width: 2.0,
-                        ),
-                        borderRadius: BorderRadius.circular(20.0),
+            ),
+            Container(
+              child: Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: TextFormField(
+                  enabled: true,
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                    enabledBorder: OutlineInputBorder(
+                      borderSide: BorderSide(
+                        color: Colors.red,
+                        width: 2.0,
                       ),
-                      filled: true,
-                      fillColor: Colors.grey[460],
-                      hintText: "Tell us if you want to.....",
-                      prefixIcon: Icon(
-                        Icons.keyboard,
-                        color: Colors.black,
-                      ),
-                      hintStyle: TextStyle(
-                          color: Colors.black, fontWeight: FontWeight.bold),
+                      borderRadius: BorderRadius.circular(20.0),
                     ),
+                    filled: true,
+                    fillColor: Colors.grey[460],
+                    hintText: "Tell us if you want to.....",
+                    prefixIcon: Icon(
+                      Icons.keyboard,
+                      color: Colors.black,
+                    ),
+                    hintStyle: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ),
-              )
-            ],
-          ),
+              ),
+            )
+          ],
         ),
       ),
     );
