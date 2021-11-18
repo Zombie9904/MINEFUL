@@ -81,77 +81,24 @@ class _HomeState extends State<Home> {
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
             ),
-            SizedBox(
-              height: 5,
-            ),
-            Row(
-              children: [
-                SizedBox(
-                  width: 15,
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(15.0),
-                  child: InkWell(
-                    child: Container(
-                      width: 150,
-                      height: 60,
-                      alignment: Alignment.center,
-                      decoration: BoxDecoration(
-                          border: Border.all(color: Colors.grey),
-                          borderRadius: BorderRadius.circular(10)),
-                      child: Row(
-                        children: [
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Icon(Icons.search),
-                          Text(
-                            "รายการโปรด",
-                            style: TextStyle(fontWeight: FontWeight.bold),
-                          )
-                        ],
-                      ),
+            Container(
+              child: Padding(
+                padding: const EdgeInsets.all(15.0),
+                child: TextFormField(
+                  keyboardType: TextInputType.emailAddress,
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderSide: BorderSide(color: Colors.red),
+                      borderRadius: BorderRadius.circular(20),
                     ),
-                    onTap: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => Favourite()));
-                    },
+                    filled: true,
+                    fillColor: Colors.grey[460],
+                    hintText: "Tell us if you want to.....",
+                    prefixIcon: Icon(Icons.keyboard),
+                    hintStyle: TextStyle(
+                        color: Colors.black, fontWeight: FontWeight.bold),
                   ),
                 ),
-                InkWell(
-                  child: Container(
-                    width: 150,
-                    height: 60,
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                        border: Border.all(color: Colors.grey),
-                        borderRadius: BorderRadius.circular(10)),
-                    child: Row(
-                      children: [
-                        SizedBox(
-                          width: 10,
-                        ),
-                        Icon(Icons.add),
-                        Text(
-                          "รายการล่าสุด",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 15),
-                        ),
-                      ],
-                    ),
-                  ),
-                  onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => Favourite()));
-                  },
-                ),
-              ],
-            ),
-            Padding(
-              padding: const EdgeInsets.all(15.0),
-              child: Text(
-                "Start your day",
-                style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
               ),
             ),
           ],
@@ -173,54 +120,61 @@ class _BottomNavigationBarState extends State<BottomNavigationBar> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 4,
+      length: 5,
       child: Container(
         height: 75,
         decoration: BoxDecoration(
           color: Colors.black,
           gradient: LinearGradient(
-            colors: [Colors.red.shade400, Colors.purple.shade400],
+            colors: [Colors.purple.shade400, Colors.red.shade400],
             begin: Alignment.bottomRight,
             end: Alignment.topLeft,
-          ),
+          ), //SAY LALISA!!! RONAN IN YOUR AREA!
         ),
         child: TabBar(
-            indicatorColor: Colors.white,
-            indicatorWeight: 3,
-            onTap: (i) {
-              switch (i) {
-                case 2:
-                  Favourite();
-                  print("SIWAGORN หน้า*ี");
-                  break;
-                default:
-              }
-            },
-            tabs: [
-              Tab(
-                  icon: Icon(
-                    Icons.home,
-                  ),
-                  text: 'Home'),
-              Tab(
+          indicatorColor: Colors.white,
+          indicatorWeight: 3,
+          onTap: (i) {
+            switch (i) {
+              case 2:
+                Favourite();
+                print("SIWAGORN หน้า*ี");
+                break;
+              default:
+            }
+          },
+          tabs: [
+            Tab(
                 icon: Icon(
-                  Icons.menu,
+                  Icons.home,
                 ),
-                text: 'Menu',
+                text: 'Home'),
+            Tab(
+              icon: Icon(
+                Icons.safety_divider,
               ),
-              Tab(
-                icon: Icon(
-                  Icons.credit_card,
-                ),
-                text: 'Premium',
+              text: 'รักษา',
+            ),
+            Tab(
+              icon: Icon(
+                Icons.local_hospital,
+                size: 50,
               ),
-              Tab(
-                icon: Icon(
-                  Icons.person,
-                ),
-                text: 'Profile',
+            ),
+            Tab(
+              icon: Icon(
+                Icons.credit_card,
               ),
-            ]),
+              text: 'PPremium',
+            ),
+            Tab(
+              icon: Icon(
+                Icons.person,
+              ),
+              text: 'Profile',
+            ),
+          ],
+        ),
       ),
     );
   }
