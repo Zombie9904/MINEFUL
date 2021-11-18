@@ -14,7 +14,9 @@ class _P1State extends State<P1> {
     HelloMessage();
   } //Run when finished build
 
+  // ignore: non_constant_identifier_names
   var Hello = "Welcome";
+  // ignore: non_constant_identifier_names
   void HelloMessage() {
     var now = DateTime.now();
     if (now.hour == 13 ||
