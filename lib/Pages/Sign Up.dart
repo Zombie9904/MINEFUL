@@ -85,7 +85,7 @@ class _SignUpState extends State<SignUp> {
                           child: TextFormField(
                               decoration: InputDecoration(
                                   border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(10),
+                                    borderRadius: BorderRadius.circular(20),
                                     borderSide: BorderSide.none,
                                   ),
                                   filled: true,
@@ -105,7 +105,7 @@ class _SignUpState extends State<SignUp> {
                               keyboardType: TextInputType.emailAddress,
                               decoration: InputDecoration(
                                   border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(10),
+                                    borderRadius: BorderRadius.circular(20),
                                     borderSide: BorderSide.none,
                                   ),
                                   filled: true,
@@ -124,7 +124,7 @@ class _SignUpState extends State<SignUp> {
                           child: TextFormField(
                               decoration: InputDecoration(
                                   border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(10),
+                                    borderRadius: BorderRadius.circular(20),
                                     borderSide: BorderSide.none,
                                   ),
                                   filled: true,
@@ -143,7 +143,7 @@ class _SignUpState extends State<SignUp> {
                           child: TextFormField(
                               decoration: InputDecoration(
                                   border: OutlineInputBorder(
-                                    borderRadius: BorderRadius.circular(10),
+                                    borderRadius: BorderRadius.circular(20),
                                     borderSide: BorderSide.none,
                                   ),
                                   filled: true,
@@ -163,7 +163,7 @@ class _SignUpState extends State<SignUp> {
                           child: ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                   shape: RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(14),
+                                    borderRadius: BorderRadius.circular(18),
                                   ),
                                   primary: Colors.white.withOpacity(0.6)),
                               onPressed: () {

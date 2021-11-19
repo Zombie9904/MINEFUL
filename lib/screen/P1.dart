@@ -72,29 +72,20 @@ class _P1State extends State<P1> {
             ),
             Container(
               child: Padding(
-                padding: const EdgeInsets.all(15.0),
+                padding: const EdgeInsets.all(20.0),
                 child: TextFormField(
-                  enabled: true,
-                  keyboardType: TextInputType.emailAddress,
-                  decoration: InputDecoration(
-                    enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(
-                        color: Colors.red,
-                        width: 2.0,
-                      ),
-                      borderRadius: BorderRadius.circular(20.0),
-                    ),
-                    filled: true,
-                    fillColor: Colors.grey[460],
-                    hintText: "Tell us if you want to.....",
-                    prefixIcon: Icon(
-                      Icons.keyboard,
-                      color: Colors.black,
-                    ),
-                    hintStyle: TextStyle(
-                        color: Colors.black, fontWeight: FontWeight.bold),
-                  ),
-                ),
+                    decoration: InputDecoration(
+                        border: OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(25),
+                          borderSide: BorderSide.none,
+                        ),
+                        filled: true,
+                        fillColor: Colors.grey[200],
+                        hintText: "พิมพ์อะไรซักหน่อยไหม",
+                        prefixIcon: Icon(
+                          Icons.book,
+                          color: Colors.black,
+                        ))),
               ),
             )
           ],
