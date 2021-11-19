@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-
 import 'P1.dart';
 import 'P2.dart';
 import 'P3.dart';
 import 'P4.dart';
+import 'P5.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
@@ -19,6 +19,7 @@ class _HomeState extends State<Home> {
     P2(),
     P3(),
     P4(),
+    P5(),
   ];
   @override
   Widget build(BuildContext context) {
