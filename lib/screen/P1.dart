@@ -41,6 +41,8 @@ class _P1State extends State<P1> {
     }
   }
 
+  String text1 = 'User!'; //กำหนดตัวเเปร
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -73,7 +75,7 @@ class _P1State extends State<P1> {
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: Text(
-                Hello + "User!",
+                Hello + "$text1", //ใช้ตัวเเปร
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
             ),
