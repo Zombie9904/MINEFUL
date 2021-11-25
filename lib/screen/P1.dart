@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project_1/screen/Test.dart';
+import 'Test.dart';
 
 class P1 extends StatefulWidget {
   const P1({Key? key}) : super(key: key);
@@ -47,7 +49,12 @@ class _P1State extends State<P1> {
         leading: IconButton(
           icon: Icon(Icons.menu),
           color: Colors.black,
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => Test())); //ไปสู่หน้าทดสอบ
+          },
         ),
         actions: [
           IconButton(
@@ -66,28 +73,32 @@ class _P1State extends State<P1> {
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: Text(
-                Hello + "Ronan",
+                Hello + "User!",
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
             ),
             Container(
+              //กล่องกรอกข้อมูล
               child: Padding(
                 padding: const EdgeInsets.all(20.0),
-                child: TextFormField(
-                    decoration: InputDecoration(
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(25),
-                          borderSide: BorderSide.none,
-                        ),
-                        filled: true,
-                        fillColor: Colors.grey[200],
-                        hintText: "พิมพ์อะไรซักหน่อยไหม",
-                        prefixIcon: Icon(
-                          Icons.book,
-                          color: Colors.black,
-                        ))),
+                child: TextField(
+                  //ตัวกรอกข้อมูลจากผู้ใช้งาน
+                  decoration: InputDecoration(
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(25),
+                      borderSide: BorderSide.none,
+                    ),
+                    filled: true,
+                    fillColor: Colors.grey[200],
+                    hintText: "พิมพ์อะไรซักหน่อยไหม",
+                    prefixIcon: Icon(
+                      Icons.book,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
               ),
-            )
+            ),
           ],
         ),
       ),

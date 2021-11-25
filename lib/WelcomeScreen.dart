@@ -15,13 +15,15 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          Container(
-            decoration: BoxDecoration(
-                image: DecorationImage(
-                    image: AssetImage('assets/images/BG5.png'),
-                    fit: BoxFit.cover,
-                    colorFilter:
-                        ColorFilter.mode(Colors.white, BlendMode.darken))),
+          Expanded(
+            child: Container(
+              decoration: BoxDecoration(
+                  image: DecorationImage(
+                      image: AssetImage('assets/images/BG5.png'),
+                      fit: BoxFit.cover,
+                      colorFilter:
+                          ColorFilter.mode(Colors.white, BlendMode.darken))),
+            ),
           ), //พื้นหลัง
           Column(children: [
             SizedBox(
