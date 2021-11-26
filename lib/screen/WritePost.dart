@@ -7,11 +7,50 @@ class WritePost extends StatefulWidget {
   _WritePostState createState() => _WritePostState();
 }
 
+String post = 'โพสต์';
+
 class _WritePostState extends State<WritePost> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        centerTitle: true,
+        actions: <Widget>[
+          // ignore: deprecated_member_use
+          FlatButton(
+            onPressed: () {},
+            child: Text(
+              '$post',
+              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            ),
+          ),
+        ],
+        foregroundColor: Colors.black,
+        backgroundColor: Colors.white,
+        elevation: 0,
+      ),
+      body: Row(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+          ),
+          Container(
+            width: 40,
+            height: 40,
+            child: CircleAvatar(
+              backgroundImage:
+                  AssetImage('assets/images/BG2.png'), //รูปโปรไฟล์ User
+            ),
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          Text(
+            'User', //UserName
+            style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
+          ),
+        ],
+      ),
     );
   }
 }

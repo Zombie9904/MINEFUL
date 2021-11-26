@@ -29,7 +29,7 @@ class _HomeState extends State<Home> {
         height: 70,
         child: BottomNavigationBar(
           type: BottomNavigationBarType.fixed,
-          selectedItemColor: Colors.blue,
+          selectedItemColor: Colors.green,
           unselectedItemColor: Colors.grey,
           backgroundColor: Colors.white,
           iconSize: 30,
