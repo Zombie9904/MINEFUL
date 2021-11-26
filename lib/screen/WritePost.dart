@@ -7,8 +7,6 @@ class WritePost extends StatefulWidget {
   _WritePostState createState() => _WritePostState();
 }
 
-String post = 'โพสต์';
-
 class _WritePostState extends State<WritePost> {
   @override
   Widget build(BuildContext context) {
@@ -18,9 +16,11 @@ class _WritePostState extends State<WritePost> {
         actions: <Widget>[
           // ignore: deprecated_member_use
           FlatButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pop(context); //กดPostเเล้วกลับหน้าหลัก
+            },
             child: Text(
-              '$post',
+              'โพสต์',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
           ),

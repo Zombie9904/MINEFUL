@@ -32,10 +32,16 @@ class _P1State extends State<P1> {
       if (now.hour == 18 ||
           now.hour == 19 ||
           now.hour == 20 ||
-          now.hour == 21 ||
-          now.hour == 22 ||
-          now.hour == 23) {
+          now.hour == 21) {
         Hello = "สวัสดียามเย็น, ";
+      } else if (now.hour == 22 ||
+          now.hour == 23 ||
+          now.hour == 00 ||
+          now.hour == 1 ||
+          now.hour == 2 ||
+          now.hour == 3 ||
+          now.hour == 4) {
+        Hello = "สวัสดียามดึก, ";
       } else {
         Hello = "สวัสดียามเช้า, ";
       }
