@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project_1/screen/Test.dart';
 import 'Test.dart';
+import 'WritePost.dart';
 
 class P1 extends StatefulWidget {
   const P1({Key? key}) : super(key: key);
@@ -39,6 +40,13 @@ class _P1State extends State<P1> {
         Hello = "สวัสดียามเช้า, ";
       }
     }
+  }
+
+  void _writepost() {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => WritePost())); //กำหนดนำทางปุ่มโพส
   }
 
   String text1 = 'User!'; //กำหนดตัวเเปร
@@ -102,6 +110,16 @@ class _P1State extends State<P1> {
               ),
             ),
           ],
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: _writepost,
+        splashColor: Colors.red,
+        backgroundColor: Colors.orange,
+        foregroundColor: Colors.black,
+        tooltip: 'Increment',
+        child: Icon(
+          Icons.create,
         ),
       ),
     );

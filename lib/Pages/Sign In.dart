@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_project_1/Pages/Sign%20Up.dart';
-import 'package:flutter_project_1/screen/Home.dart';
+import 'package:flutter_project_1/screen/NavigationBar.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
