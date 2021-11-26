@@ -87,28 +87,33 @@ class _P1State extends State<P1> {
                 style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
               ),
             ),
-            Container(
-              //กล่องกรอกข้อมูล
-              child: Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: TextField(
-                  //ตัวกรอกข้อมูลจากผู้ใช้งาน
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(25),
-                      borderSide: BorderSide.none,
-                    ),
-                    filled: true,
-                    fillColor: Colors.grey[200],
-                    hintText: "พิมพ์อะไรซักหน่อยไหม",
-                    prefixIcon: Icon(
-                      Icons.book,
-                      color: Colors.black,
+            Divider(
+              height: 5,
+              thickness: 1,
+            ),
+            InkWell(
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                      width: 40,
+                      height: 40,
+                      child: CircleAvatar(
+                        backgroundImage: AssetImage(
+                            'assets/images/BG2.png'), //รูปโปรไฟล์ User
+                      ),
                     ),
                   ),
-                ),
+                  Text('พิมพ์อะไรสักหน่อยไหม...')
+                ],
               ),
+              onTap: _writepost,
             ),
+            Divider(
+              height: 10,
+              thickness: 1,
+            )
           ],
         ),
       ),
