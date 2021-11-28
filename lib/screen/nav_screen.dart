@@ -12,53 +12,64 @@ class NavScreen extends StatefulWidget {
   _NavScreen createState() => _NavScreen();
 }
 
+int currentIndex = 0;
+final screens = [
+  P1(),
+  P2(),
+  P3(),
+  P4(),
+  P5(),
+];
+
 class _NavScreen extends State<NavScreen> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 5,
       child: Scaffold(
-        backgroundColor: Colors.black,
         body: TabBarView(
           physics: NeverScrollableScrollPhysics(),
           children: [P1(), P2(), P3(), P4(), P5()],
         ),
-        bottomNavigationBar: TabBar(
-          unselectedLabelColor: Colors.grey,
-          labelColor: Color(0xFFffd700),
-          indicator: BoxDecoration(
-            border: Border(
-              top: BorderSide(color: Color(0xFFffd700), width: 4),
+        bottomNavigationBar: Padding(
+          padding: const EdgeInsets.only(bottom: 10.0),
+          child: TabBar(
+            unselectedLabelColor: Colors.grey,
+            labelColor: Colors.blue,
+            indicator: BoxDecoration(
+              border: Border(
+                top: BorderSide(color: Colors.blue, width: 3),
+              ),
             ),
+            tabs: [
+              Tab(
+                icon: Icon(
+                  Icons.home,
+                ),
+                text: 'Home',
+              ),
+              Tab(
+                icon: Icon(Icons.list),
+                text: 'Menu',
+              ),
+              Tab(
+                icon: Icon(
+                  Icons.local_hospital,
+                ),
+                text: 'รักษา',
+              ),
+              Tab(
+                icon: Icon(
+                  Icons.credit_card,
+                ),
+                text: 'Premium',
+              ),
+              Tab(
+                icon: Icon(Icons.person),
+                text: 'profile',
+              ),
+            ],
           ),
-          tabs: [
-            Tab(
-              icon: Icon(
-                Icons.home,
-              ),
-              text: 'Home',
-            ),
-            Tab(
-              icon: Icon(Icons.list),
-              text: 'Menu',
-            ),
-            Tab(
-              icon: Icon(
-                Icons.local_hospital,
-              ),
-              text: 'รักษา',
-            ),
-            Tab(
-              icon: Icon(
-                Icons.credit_card,
-              ),
-              text: 'Premium',
-            ),
-            Tab(
-              icon: Icon(Icons.person),
-              text: 'profile',
-            ),
-          ],
         ),
       ),
     );
