@@ -14,6 +14,7 @@ class _WritePostState extends State<WritePost> {
       appBar: AppBar(
         centerTitle: true,
         actions: <Widget>[
+          //ปุ่มโพสมุมบนขวามือ
           // ignore: deprecated_member_use
           FlatButton(
             onPressed: () {
@@ -53,19 +54,21 @@ class _WritePostState extends State<WritePost> {
               ),
             ],
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: TextFormField(
-              autofocus: true,
-              style: TextStyle(fontSize: 18),
-              maxLines: 5,
-              decoration: InputDecoration(
-                border: InputBorder.none,
-                hintText: 'Writing anything.',
-                hintMaxLines: 4,
+          Form(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: TextFormField(
+                autofocus: true,
+                style: TextStyle(fontSize: 18),
+                maxLines: 5,
+                decoration: InputDecoration(
+                  border: InputBorder.none,
+                  hintText: 'Writing anything.',
+                  hintMaxLines: 4,
+                ),
               ),
             ),
-          )
+          ),
         ],
       ),
     );
