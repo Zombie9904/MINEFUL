@@ -33,42 +33,49 @@ class _NavScreen extends State<NavScreen> {
         ),
         bottomNavigationBar: Padding(
           padding: const EdgeInsets.only(bottom: 10.0),
-          child: TabBar(
-            unselectedLabelColor: Colors.grey,
-            labelColor: Colors.blue,
-            indicator: BoxDecoration(
+          child: Container(
+            decoration: BoxDecoration(
               border: Border(
-                top: BorderSide(color: Colors.blue, width: 3),
+                top: BorderSide(color: Colors.grey),
               ),
             ),
-            tabs: [
-              Tab(
-                icon: Icon(
-                  Icons.home,
+            child: TabBar(
+              unselectedLabelColor: Colors.grey,
+              labelColor: Colors.blue,
+              indicator: BoxDecoration(
+                border: Border(
+                  top: BorderSide(color: Colors.blue, width: 3.5),
                 ),
-                text: 'Home',
               ),
-              Tab(
-                icon: Icon(Icons.list),
-                text: 'Menu',
-              ),
-              Tab(
-                icon: Icon(
-                  Icons.local_hospital,
+              tabs: [
+                Tab(
+                  icon: Icon(
+                    Icons.home,
+                  ),
+                  text: 'Home',
                 ),
-                text: 'รักษา',
-              ),
-              Tab(
-                icon: Icon(
-                  Icons.credit_card,
+                Tab(
+                  icon: Icon(Icons.list),
+                  text: 'Menu',
                 ),
-                text: 'Premium',
-              ),
-              Tab(
-                icon: Icon(Icons.person),
-                text: 'profile',
-              ),
-            ],
+                Tab(
+                  icon: Icon(
+                    Icons.local_hospital,
+                  ),
+                  text: 'รักษา',
+                ),
+                Tab(
+                  icon: Icon(
+                    Icons.credit_card,
+                  ),
+                  text: 'Premium',
+                ),
+                Tab(
+                  icon: Icon(Icons.person),
+                  text: 'profile',
+                ),
+              ],
+            ),
           ),
         ),
       ),
