@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'P1.dart';
-import 'P2.dart';
-import 'P3.dart';
-import 'P4.dart';
-import 'P5.dart';
+import 'package:flutter_project_1/screen/export.dart';
 
 class NavScreen extends StatefulWidget {
   const NavScreen({Key? key}) : super(key: key);
@@ -11,15 +7,6 @@ class NavScreen extends StatefulWidget {
   @override
   _NavScreen createState() => _NavScreen();
 }
-
-int currentIndex = 0;
-final screens = [
-  P1(),
-  P2(),
-  P3(),
-  P4(),
-  P5(),
-];
 
 class _NavScreen extends State<NavScreen> {
   @override
@@ -36,15 +23,15 @@ class _NavScreen extends State<NavScreen> {
           child: Container(
             decoration: BoxDecoration(
               border: Border(
-                top: BorderSide(color: Colors.grey),
+                top: BorderSide(color: Colors.grey.shade100),
               ),
             ),
             child: TabBar(
               unselectedLabelColor: Colors.grey,
-              labelColor: Colors.blue,
+              labelColor: Colors.black,
               indicator: BoxDecoration(
                 border: Border(
-                  top: BorderSide(color: Colors.blue, width: 3.5),
+                  top: BorderSide(color: Colors.black, width: 4),
                 ),
               ),
               tabs: [
@@ -68,7 +55,7 @@ class _NavScreen extends State<NavScreen> {
                   icon: Icon(
                     Icons.credit_card,
                   ),
-                  text: 'Premium',
+                  text: 'พิเศษ',
                 ),
                 Tab(
                   icon: Icon(Icons.person),
