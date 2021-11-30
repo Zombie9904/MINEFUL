@@ -10,6 +10,15 @@ class P5 extends StatefulWidget {
 class _P5State extends State<P5> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      appBar: AppBar(
+        automaticallyImplyLeading: false,
+        title: Text('Profile'),
+        centerTitle: true,
+        backgroundColor: Colors.white,
+        foregroundColor: Colors.grey,
+        elevation: 0,
+      ),
+    );
   }
 }

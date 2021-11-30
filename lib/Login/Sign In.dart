@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_project_1/Pages/Sign%20Up.dart';
+import 'package:flutter_project_1/Login/Sign%20Up.dart';
+
 import 'package:flutter_project_1/screen/nav_screen.dart';
 
 class SignIn extends StatefulWidget {

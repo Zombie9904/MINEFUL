@@ -8,6 +8,9 @@ class WritePost extends StatefulWidget {
 }
 
 class _WritePostState extends State<WritePost> {
+  final mycontroller = TextEditingController();
+  String post = "";
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,13 +20,15 @@ class _WritePostState extends State<WritePost> {
           //ปุ่มโพสมุมบนขวามือ
           // ignore: deprecated_member_use
           FlatButton(
-            onPressed: () {
-              Navigator.pop(context); //กดPostเเล้วกลับหน้าหลัก
-            },
             child: Text(
               'โพสต์',
               style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
+            onPressed: () {
+              post = mycontroller.text.toString();
+              print('$post');
+              Navigator.pop(context); //กดPostเเล้วกลับหน้าหลัก
+            },
           ),
         ],
         foregroundColor: Colors.black,
@@ -58,6 +63,7 @@ class _WritePostState extends State<WritePost> {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: TextFormField(
+                controller: mycontroller,
                 autofocus: true,
                 style: TextStyle(fontSize: 18),
                 maxLines: 5,

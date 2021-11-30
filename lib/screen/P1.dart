@@ -61,20 +61,21 @@ class _P1State extends State<P1> {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
-            elevation: 0,
             snap: true,
+            elevation: 0,
             floating: true,
             leading: IconButton(
               onPressed: () {},
               icon: Icon(Icons.menu),
             ),
-            title: Text('MineFul'),
             backgroundColor: Colors.white,
             foregroundColor: Colors.black,
             actions: [
               IconButton(
                 onPressed: () {},
-                icon: Icon(Icons.person),
+                icon: Icon(
+                  Icons.settings,
+                ),
               ),
             ],
           ),
@@ -89,7 +90,7 @@ class _P1State extends State<P1> {
                       child: Text(
                         Hello + "$text1", //ใช้ตัวเเปร
                         style: TextStyle(
-                            fontSize: 30, fontWeight: FontWeight.bold),
+                            fontSize: 28, fontWeight: FontWeight.bold),
                       ),
                     ),
                     Divider(
@@ -102,6 +103,8 @@ class _P1State extends State<P1> {
                           Padding(
                             padding: const EdgeInsets.all(8.0),
                             child: Container(
+                              decoration: BoxDecoration(
+                                  borderRadius: BorderRadius.circular(8)),
                               width: 40,
                               height: 40,
                               child: CircleAvatar(
@@ -121,9 +124,13 @@ class _P1State extends State<P1> {
                     )
                   ],
                 ),
-                Container(
-                  height: 1000,
-                  color: Colors.white,
+                Column(
+                  children: [
+                    Container(
+                      height: 1000,
+                      color: Colors.white,
+                    ),
+                  ],
                 )
               ],
             ),
