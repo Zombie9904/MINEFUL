@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project_1/screen/Test.dart';
 import 'WritePost.dart';
 
 class P1 extends StatefulWidget {
@@ -65,7 +66,10 @@ class _P1State extends State<P1> {
             elevation: 0,
             floating: true,
             leading: IconButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                    context, MaterialPageRoute(builder: (context) => Test()));
+              },
               icon: Icon(Icons.menu),
             ),
             backgroundColor: Colors.white,
