@@ -22,8 +22,8 @@ class ConsultationCard extends StatelessWidget {
                 top: 0.0,
                 right: 0.0,
                 child: Container(
-                  width: 70.0,
-                  height: 30.0,
+                  width: 120.0,
+                  height: 150.0,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
                     image:
@@ -59,13 +59,14 @@ class ConsultationCard extends StatelessWidget {
                               color: Colors.white,
                             ),
                             SizedBox(width: 12.0),
-                            Expanded(
+                            Container(
+                              width: 150,
                               child: Text(consultation.subtitle,
                                   style: TextStyle(fontSize: 15)),
                             ),
                           ],
                         ),
-                      )
+                      ),
                     ],
                   ),
                 ),

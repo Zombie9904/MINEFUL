@@ -9,31 +9,17 @@ class Consultation {
 List<Consultation> consultationList = [
   Consultation(
     title: "Dr. Ronan",
-    image: "assets/images/Doctor.png",
-    subtitle: "ผู้เชี่ยวชาญทางด้านจิตเวชมากกว่า300ปี",
+    image: "assets/images/Ronan.png",
+    subtitle: "ผู้เชี่ยวชาญทางด้านจิตเวชมากกว่า3,000ปี",
   ),
   Consultation(
     title: "Dental trouble?",
-    image: "assets/images/Doctor.png",
-    subtitle:
-        "For dental patient here can easily contact with doctor. Can chat & live chat.",
+    image: "assets/images/ten.png",
+    subtitle: "เชี่ยวชาญทางตูด",
   ),
   Consultation(
-    title: "Heart Issues?",
+    title: "Dr......",
     image: "assets/images/Doctor.png",
-    subtitle:
-        "For heart patient here can easily contact with doctor. Can chat & live chat.",
-  ),
-  Consultation(
-    title: "Eyes Issues?",
-    image: "assets/images/Doctor.png",
-    subtitle:
-        "For eyes patient here can easily contact with doctor. Can chat & live chat.",
-  ),
-  Consultation(
-    title: "Therapist?",
-    image: "assets/images/Doctor.png",
-    subtitle:
-        "For therapist patient here can easily contact with doctor. Can chat & live chat.",
+    subtitle: "...",
   ),
 ];
