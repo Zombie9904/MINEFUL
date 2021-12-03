@@ -68,18 +68,11 @@ class _P5State extends State<P5> {
                 child: Padding(
                   padding: const EdgeInsets.all(10.0),
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(
-                        'My points',
+                        'เเต้มสะสม',
                         style: textStlye,
-                      ),
-                      SizedBox(width: 170),
-                      Text(
-                        '...Points',
-                        style: textStlye,
-                      ),
-                      SizedBox(
-                        width: 30,
                       ),
                       Icon(Icons.arrow_forward_ios)
                     ],
