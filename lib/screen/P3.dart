@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/widget/consulationClass.dart';
+import 'package:flutter_project_1/widget/class_consulation.dart';
 import 'package:flutter_project_1/widget/consulation.dart';
 
 class P3 extends StatelessWidget {

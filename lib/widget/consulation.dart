@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/widget/consulationClass.dart';
+import 'package:flutter_project_1/widget/class_consulation.dart';
 
 class ConsultationCard extends StatelessWidget {
   final Consultation consultation;
@@ -8,7 +8,7 @@ class ConsultationCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       color: Color(0xFFf4cccc),
-      margin: EdgeInsets.only(left: 18.0, bottom: 5.0),
+      margin: EdgeInsets.only(right: 18.0, bottom: 5.0, left: 18),
       elevation: 1.0,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(17),
