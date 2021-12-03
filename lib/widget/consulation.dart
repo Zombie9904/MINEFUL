@@ -6,16 +6,16 @@ class ConsultationCard extends StatelessWidget {
   ConsultationCard({required this.consultation});
   @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);
     return Card(
+      color: Color(0xFFf4cccc),
       margin: EdgeInsets.only(left: 18.0, bottom: 5.0),
       elevation: 1.0,
       shape: RoundedRectangleBorder(
-        borderRadius: BorderRadius.circular(12),
+        borderRadius: BorderRadius.circular(17),
       ),
       child: InkWell(
         child: Container(
-          width: 250.0,
+          width: 300.0,
           child: Stack(
             children: <Widget>[
               Positioned(
@@ -26,14 +26,16 @@ class ConsultationCard extends StatelessWidget {
                   height: 30.0,
                   alignment: Alignment.center,
                   decoration: BoxDecoration(
+                    image:
+                        DecorationImage(image: AssetImage(consultation.image)),
                     borderRadius: BorderRadius.only(
                       topRight: Radius.circular(12.0),
                       bottomLeft: Radius.circular(12.0),
                     ),
                   ),
-                  child: Text(
-                    "\$${consultation.price}",
-                  ),
+                  // child: Text(
+                  //   "\$${consultation.price}",
+                  // ),
                 ),
               ),
               Positioned(
@@ -46,18 +48,20 @@ class ConsultationCard extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Text(consultation.title,
-                          style: theme.textTheme.headline3),
+                          style: TextStyle(
+                              fontSize: 15, fontWeight: FontWeight.bold)),
                       SizedBox(height: 15.0),
                       Expanded(
                         child: Row(
                           children: <Widget>[
                             Container(
-                              width: 2.0,
+                              width: 3.0,
+                              color: Colors.white,
                             ),
                             SizedBox(width: 12.0),
                             Expanded(
                               child: Text(consultation.subtitle,
-                                  style: theme.textTheme.subtitle2),
+                                  style: TextStyle(fontSize: 15)),
                             ),
                           ],
                         ),
