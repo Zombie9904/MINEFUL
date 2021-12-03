@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_project_1/Login/Sign%20In.dart';
 
-import 'package:flutter_project_1/widget/class_profile.dart';
-import 'package:flutter_project_1/widget/profile.dart';
+// import 'package:flutter_project_1/widget/class_profile.dart';
+// import 'package:flutter_project_1/widget/profile.dart';
 
 class P5 extends StatefulWidget {
   const P5({Key? key}) : super(key: key);
