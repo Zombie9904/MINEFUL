@@ -5,7 +5,9 @@ import 'color.dart';
 ThemeData darkThemeData(BuildContext context) {
   return ThemeData.dark().copyWith(
     primaryColor: kPrimaryColor,
+    // ignore: deprecated_member_use
     accentColor: kPrimaryLightColor,
+    // ignore: deprecated_member_use
     buttonColor: kPrimaryColor,
     primaryColorLight: kBackgroundLightColor,
     hintColor: kSecondaryDarkColor,
@@ -126,8 +128,10 @@ ThemeData themeData(BuildContext context) {
   return ThemeData(
     appBarTheme: AppBarTheme(color: kBackgroundLightColor, elevation: 0),
     primaryColor: kPrimaryColor,
+    // ignore: deprecated_member_use
     buttonColor: kPrimaryColor,
     primaryColorLight: kBackgroundDarkColor,
+    // ignore: deprecated_member_use
     accentColor: kPrimaryDarkColor,
     errorColor: kErrorLightColor,
     hintColor: kSecondaryLightColor,
