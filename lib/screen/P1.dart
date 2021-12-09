@@ -132,7 +132,6 @@ class _P1State extends State<P1> {
                   children: [
                     Container(
                       height: 1000,
-                      color: Colors.white,
                     ),
                   ],
                 )

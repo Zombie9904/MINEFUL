@@ -65,7 +65,7 @@ class _WritePostState extends State<WritePost> {
               child: TextFormField(
                 controller: mycontroller,
                 autofocus: true,
-                style: TextStyle(fontSize: 18),
+                style: TextStyle(fontSize: 20),
                 maxLines: 5,
                 decoration: InputDecoration(
                   border: InputBorder.none,
