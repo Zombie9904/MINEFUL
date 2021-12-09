@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/widget/class_consulation.dart';
+import 'package:flutter_project_1/component/class_consulation.dart';
 
 class ConsultationCard extends StatelessWidget {
   final Consultation consultation;
