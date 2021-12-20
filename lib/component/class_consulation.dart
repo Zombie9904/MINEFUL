@@ -15,7 +15,7 @@ List<Consultation> consultationList = [
   Consultation(
     title: "Dental trouble?",
     image: "assets/images/ten.png",
-    subtitle: "เชี่ยวชาญทางตูด",
+    subtitle: "พ่อมึงสิ",
   ),
   Consultation(
     title: "Dr......",
