@@ -125,16 +125,40 @@ class _P1State extends State<P1> {
                     Divider(
                       height: 10,
                       thickness: 1,
+                    ),
+                    InkWell(
+                      child: Container(
+                        width: 130,
+                        height: 45,
+                        child: Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              Text(
+                                'เพิ่มรูปภาพ',
+                                style: TextStyle(color: Colors.blue),
+                              ),
+                              Icon(
+                                Icons.add_a_photo,
+                                color: Colors.blue,
+                              ),
+                              VerticalDivider(
+                                width: 5,
+                                thickness: 2,
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                      onTap: () {},
+                    ),
+                    Divider(
+                      height: 25,
+                      thickness: 8,
                     )
                   ],
                 ),
-                Column(
-                  children: [
-                    Container(
-                      height: 1000,
-                    ),
-                  ],
-                )
               ],
             ),
           )
