@@ -91,7 +91,7 @@ class _P5State extends State<P5> {
                         'เเต้มสะสม',
                         style: textStlye,
                       ),
-                      Icon(Icons.arrow_forward_ios)
+                      Icon(Icons.arrow_forward_ios),
                     ],
                   ),
                 ),
