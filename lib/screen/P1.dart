@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project_1/component/Media_post.dart';
 import 'package:flutter_project_1/screen/Test.dart';
 import 'WritePost.dart';
 
@@ -183,6 +184,11 @@ class _P1State extends State<P1> {
                             ),
                           ),
                           onTap: () {},
+                        ),
+                        Mediapost(
+                          'สตอรี่',
+                          Colors.purple,
+                          Icons.storage,
                         ),
                       ],
                     ),
