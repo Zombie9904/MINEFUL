@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/component/Media_post.dart';
-import 'package:flutter_project_1/screen/Test.dart';
-import 'WritePost.dart';
+
+import 'package:flutter_project_1/widgets/Media_post.dart';
+
+import '../widgets/WritePost.dart';
 
 class P1 extends StatefulWidget {
   const P1({Key? key}) : super(key: key);
@@ -67,10 +68,7 @@ class _P1State extends State<P1> {
             elevation: 0,
             floating: true,
             leading: IconButton(
-              onPressed: () {
-                Navigator.push(
-                    context, MaterialPageRoute(builder: (context) => Test()));
-              },
+              onPressed: () {},
               icon: Icon(Icons.menu),
             ),
             backgroundColor: Colors.white,
