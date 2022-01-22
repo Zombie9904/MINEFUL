@@ -9,23 +9,52 @@ class Firstpage extends StatefulWidget {
   _FirstpageState createState() => _FirstpageState();
 }
 
+var font = TextStyle(
+  fontStyle: FontStyle.italic,
+  fontWeight: FontWeight.bold,
+  fontSize: 18,
+);
+
 class _FirstpageState extends State<Firstpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        mainAxisAlignment: MainAxisAlignment.center,
+      body: Stack(
         children: [
           Container(
-            child: IconButton(
-              icon: Icon(Icons.ac_unit),
-              onPressed: () {
-                Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => NavScreen()));
-              },
+            height: MediaQuery.of(context).size.longestSide,
+            width: MediaQuery.of(context).size.shortestSide,
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                  image: AssetImage("assets/images/BG6.png"),
+                  fit: BoxFit.cover),
             ),
-          )
+          ),
+          SafeArea(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  Text('already have an account?', style: font),
+                  SizedBox(
+                    width: 5,
+                  ),
+                  GestureDetector(
+                    onTap: () {},
+                    child: Text(
+                      "Login",
+                      style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 18,
+                          fontStyle: FontStyle.italic,
+                          fontWeight: FontWeight.bold),
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
         ],
       ),
     );
