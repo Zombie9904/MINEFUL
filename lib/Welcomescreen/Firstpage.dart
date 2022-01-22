@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/screen/export.dart';
+
+import 'package:flutter_project_1/screen/nav_screen.dart';
 
 class Firstpage extends StatefulWidget {
   const Firstpage({Key? key}) : super(key: key);
@@ -21,7 +22,7 @@ class _FirstpageState extends State<Firstpage> {
               icon: Icon(Icons.ac_unit),
               onPressed: () {
                 Navigator.of(context)
-                    .push(MaterialPageRoute(builder: (context) => P1()));
+                    .push(MaterialPageRoute(builder: (context) => NavScreen()));
               },
             ),
           )

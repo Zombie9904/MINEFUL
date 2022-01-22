@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-
 import 'package:flutter_project_1/widgets/Media_post.dart';
-
-import '../widgets/WritePost.dart';
+import 'package:flutter_project_1/widgets/WritePost.dart';
 
 class P1 extends StatefulWidget {
   const P1({Key? key}) : super(key: key);
