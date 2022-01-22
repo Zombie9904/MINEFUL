@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/component/class_consulation.dart';
-import 'package:flutter_project_1/component/consulation.dart';
+import 'package:flutter_project_1/widgets/class_consulation.dart';
+import 'package:flutter_project_1/widgets/consulation.dart';
 
 class P3 extends StatelessWidget {
   final mar = EdgeInsets.only(left: 20);
