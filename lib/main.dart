@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/WelcomeScreen.dart';
+import 'package:flutter_project_1/Welcomescreen/Firstpage.dart';
 import 'package:flutter_project_1/provider/theme.dart';
 
 void main() {
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.system,
       theme: themeData(context),
       darkTheme: darkThemeData(context),
-      home: WelcomeScreen(),
+      home: Firstpage(),
     );
   }
 }

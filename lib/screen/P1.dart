@@ -127,61 +127,15 @@ class _P1State extends State<P1> {
                     ),
                     Row(
                       children: [
-                        InkWell(
-                          child: Container(
-                            width: 130,
-                            height: 45,
-                            child: Padding(
-                              padding: const EdgeInsets.all(10.0),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text(
-                                    'เพิ่มรูปภาพ',
-                                    style: TextStyle(color: Colors.blue),
-                                  ),
-                                  Icon(
-                                    Icons.add_a_photo,
-                                    color: Colors.blue,
-                                  ),
-                                  VerticalDivider(
-                                    width: 5,
-                                    thickness: 2,
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          onTap: () {},
+                        Mediapost(
+                          'เพิ่มรูปภาพ',
+                          Colors.blue,
+                          Icons.add_a_photo,
                         ),
-                        InkWell(
-                          child: Container(
-                            width: 130,
-                            height: 45,
-                            child: Padding(
-                              padding: const EdgeInsets.all(10.0),
-                              child: Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
-                                children: [
-                                  Text(
-                                    'วิดีโอ',
-                                    style: TextStyle(color: Colors.green),
-                                  ),
-                                  Icon(
-                                    Icons.videocam,
-                                    color: Colors.green,
-                                  ),
-                                  VerticalDivider(
-                                    width: 5,
-                                    thickness: 2,
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-                          onTap: () {},
+                        Mediapost(
+                          'วิดีโอ',
+                          Colors.green,
+                          Icons.video_call,
                         ),
                         Mediapost(
                           'สตอรี่',

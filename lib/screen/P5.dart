@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/Login/Sign%20In.dart';
 
 // import 'package:flutter_project_1/widget/class_profile.dart';
 // import 'package:flutter_project_1/widget/profile.dart';
@@ -255,10 +254,7 @@ class _P5State extends State<P5> {
                       ),
                       primary: Colors.red),
                   child: Text('ออกจากระบบ'),
-                  onPressed: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => SignIn()));
-                  },
+                  onPressed: () {},
                 ),
               ),
             ),
