@@ -63,20 +63,6 @@ class _P5State extends State<P5> {
             SizedBox(
               height: 10,
             ),
-            // Container(
-            //   width: double.infinity,
-            //   height: MediaQuery.of(context).size.shortestSide,
-            //   child: ListView.builder(
-            //     itemCount: profilelist.length,
-            //     scrollDirection: Axis.vertical,
-            //     shrinkWrap: true,
-            //     physics: BouncingScrollPhysics(),
-            //     itemBuilder: (context, index) {
-            //       var item = profilelist[index];
-            //       return MyProfile(myprofile: item);
-            //     },
-            //   ),
-            // ),
             InkWell(
               child: Container(
                 width: MediaQuery.of(context).size.shortestSide,
