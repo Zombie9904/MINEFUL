@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_project_1/widgets/Media_post.dart';
+import 'package:flutter_project_1/widgets/P1_widgets.dart';
 import 'package:flutter_project_1/widgets/WritePost.dart';
 
 class P1 extends StatefulWidget {
