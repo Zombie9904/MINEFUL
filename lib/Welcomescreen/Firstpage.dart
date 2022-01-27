@@ -35,7 +35,7 @@ class _FirstpageState extends State<Firstpage> {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Text('already have an account?', style: font),
+                        Text('Already have an account?', style: font),
                         SizedBox(
                           width: 5,
                         ),
@@ -90,7 +90,7 @@ class _FirstpageState extends State<Firstpage> {
                       height: 15,
                     ),
                     F1('password (6+ characters)',
-                        Icons.password), //from Text filedF1.dart
+                        Icons.vpn_key), //from Text filedF1.dart
                     SizedBox(
                       height: 15,
                     ),

@@ -128,16 +128,16 @@ class _P1State extends State<P1> {
                         Mediapost(
                           'เพิ่มรูปภาพ',
                           Colors.blue,
-                          Icons.add_a_photo,
+                          Icons.photo,
                         ),
                         Mediapost(
                           'วิดีโอ',
-                          Colors.green,
+                          Color(0xFF674ea7),
                           Icons.video_call,
                         ),
                         Mediapost(
                           'สตอรี่',
-                          Colors.purple,
+                          Colors.green.shade700,
                           Icons.storage,
                         ),
                       ],
