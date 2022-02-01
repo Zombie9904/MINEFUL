@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project_1/Welcomescreen/Firstpage.dart';
 import 'package:flutter_project_1/widgets/secondpage.dart';
 
 class Secondpage extends StatefulWidget {
@@ -94,7 +95,12 @@ class _SecondpageState extends State<Secondpage> {
                           width: 6,
                         ),
                         GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => Firstpage()));
+                          },
                           child: Text(
                             "Sign up for free!",
                             style: TextStyle(
