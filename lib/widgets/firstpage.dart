@@ -2,11 +2,11 @@
 
 import 'package:flutter/material.dart';
 
-class F1 extends StatelessWidget {
+class First extends StatelessWidget {
   String hint;
   var Icon1;
 
-  F1(this.hint, this.Icon1);
+  First(this.hint, this.Icon1);
 
   @override
   Widget build(BuildContext context) {
@@ -38,10 +38,36 @@ class F1 extends StatelessWidget {
 }
 
 class Elevationbutton1 extends StatelessWidget {
-  late String text1;
-  late Color colors1;
-  late Color colors2;
+  String text1;
+  Color colors1;
+  Color colors2;
   Elevationbutton1(this.text1, this.colors1, this.colors2);
+  @override
+  Widget build(BuildContext context) {
+    return Center(
+      child: ElevatedButton(
+        style: ElevatedButton.styleFrom(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(13),
+            ),
+            minimumSize: Size(320, 50),
+            primary: colors1,
+            onPrimary: colors2),
+        onPressed: () {},
+        child: Text(
+          text1,
+          style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+        ),
+      ),
+    );
+  }
+}
+
+class Elevationbutton2 extends StatelessWidget {
+  String text1;
+  Color colors1;
+  Color colors2;
+  Elevationbutton2(this.text1, this.colors1, this.colors2);
   @override
   Widget build(BuildContext context) {
     return Center(

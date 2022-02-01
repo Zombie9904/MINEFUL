@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project_1/Welcomescreen/Secondpage.dart';
 import 'package:flutter_project_1/provider/font.dart';
-import 'package:flutter_project_1/screen/nav_screen.dart';
-import 'package:flutter_project_1/widgets/text_filed_F1.dart';
+
+import 'package:flutter_project_1/widgets/firstpage.dart';
+import 'package:flutter_project_1/widgets/secondpage.dart';
 
 class Firstpage extends StatefulWidget {
   const Firstpage({Key? key}) : super(key: key);
@@ -44,7 +46,7 @@ class _FirstpageState extends State<Firstpage> {
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                    builder: (context) => NavScreen()));
+                                    builder: (context) => Secondpage()));
                           },
                           child: Text(
                             "Login",
@@ -73,24 +75,24 @@ class _FirstpageState extends State<Firstpage> {
                     SizedBox(
                       height: 20,
                     ),
-                    F1('First name', Icons.person), //from Text filedF1.dart
+                    First('First name', Icons.person), //firstpage
                     SizedBox(
                       height: 15,
                     ),
-                    F1('Last name', Icons.person_add), //from Text filedF1.dart
+                    First('Last name', Icons.person_add),
                     SizedBox(
                       height: 15,
                     ),
-                    F1('Username', Icons.verified), //from Text filedF1.dart
+                    First('Username', Icons.verified),
                     SizedBox(
                       height: 15,
                     ),
-                    F1('Email adress', Icons.email), //from Text filedF1.dart
+                    First('Email adress', Icons.email),
                     SizedBox(
                       height: 15,
                     ),
-                    F1('password (6+ characters)',
-                        Icons.vpn_key), //from Text filedF1.dart
+                    Password('Password (+6 Character)',
+                        Icons.vpn_key), //from secound password
                     SizedBox(
                       height: 15,
                     ),
@@ -98,7 +100,7 @@ class _FirstpageState extends State<Firstpage> {
                     SizedBox(
                       height: 10,
                     ),
-                    Elevationbutton1("Continue with Google",
+                    Elevationbutton2("Continue with Google",
                         Colors.grey.shade300, Colors.black),
                     SizedBox(
                       height: 55,

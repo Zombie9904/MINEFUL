@@ -43,7 +43,7 @@ class _NavScreen extends State<NavScreen> {
                 ),
                 Tab(
                   icon: Icon(Icons.list),
-                  text: 'Menu',
+                  text: 'เมนู',
                 ),
                 Tab(
                   icon: Icon(
