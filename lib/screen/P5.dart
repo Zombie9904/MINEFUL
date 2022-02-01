@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project_1/widgets/P5_widgets.dart';
 
 // import 'package:flutter_project_1/widget/class_profile.dart';
 // import 'package:flutter_project_1/widget/profile.dart';
@@ -63,84 +64,12 @@ class _P5State extends State<P5> {
             SizedBox(
               height: 10,
             ),
-            InkWell(
-              child: Container(
-                width: MediaQuery.of(context).size.shortestSide,
-                height: 60,
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'เเต้มสะสม',
-                        style: textStlye,
-                      ),
-                      Icon(Icons.arrow_forward_ios),
-                    ],
-                  ),
-                ),
-              ),
-              onTap: () {},
-            ),
-            Divider(
-              height: 1,
-              thickness: 0.99,
-              indent: 10,
-              endIndent: 10,
-            ),
-            InkWell(
-              child: Container(
-                width: MediaQuery.of(context).size.shortestSide,
-                height: 60,
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'เเก้ไขช้อมูล',
-                        style: textStlye,
-                      ),
-                      Icon(Icons.arrow_forward_ios)
-                    ],
-                  ),
-                ),
-              ),
-              onTap: () {},
-            ),
-            Divider(
-              height: 1,
-              thickness: 0.99,
-              indent: 10,
-              endIndent: 10,
-            ),
-            InkWell(
-              child: Container(
-                width: MediaQuery.of(context).size.shortestSide,
-                height: 60,
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'สิทธิพิเศษ',
-                        style: textStlye,
-                      ),
-                      Icon(Icons.arrow_forward_ios)
-                    ],
-                  ),
-                ),
-              ),
-              onTap: () {},
-            ),
-            Divider(
-              height: 1,
-              thickness: 0.99,
-              indent: 10,
-              endIndent: 10,
-            ),
+            Profile1("เเต้มสะสม"),
+            divider(),
+            Profile2("เเก้ไขข้อมูล"),
+            divider(),
+            Profile3("สิทธิพิเศษ"),
+            divider(),
             SizedBox(
               height: 15,
             ),
@@ -154,78 +83,11 @@ class _P5State extends State<P5> {
             SizedBox(
               height: 10,
             ),
-            InkWell(
-              child: Container(
-                width: MediaQuery.of(context).size.shortestSide,
-                height: 60,
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'ศูนย์ให้ความช่วยเลือ',
-                        style: textStlye,
-                      ),
-                      Icon(Icons.arrow_forward_ios)
-                    ],
-                  ),
-                ),
-              ),
-              onTap: () {},
-            ),
-            Divider(
-              height: 1,
-              thickness: 0.99,
-              indent: 10,
-              endIndent: 10,
-            ),
-            InkWell(
-              child: Container(
-                width: MediaQuery.of(context).size.shortestSide,
-                height: 60,
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'การตั้งค่า',
-                        style: textStlye,
-                      ),
-                      Icon(Icons.arrow_forward_ios)
-                    ],
-                  ),
-                ),
-              ),
-              onTap: () {},
-            ),
-            Divider(
-              height: 1,
-              thickness: 0.99,
-              indent: 10,
-              endIndent: 10,
-            ),
-            InkWell(
-              child: Container(
-                width: MediaQuery.of(context).size.shortestSide,
-                height: 60,
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Text(
-                        'ข้อเสนอเเนะ',
-                        style: textStlye,
-                      ),
-                      Icon(Icons.arrow_forward_ios)
-                    ],
-                  ),
-                ),
-              ),
-              onTap: () {},
-            ),
+            Profile4("ศูนย์ให้ความช่วยเหลือ"),
+            divider(),
+            Profile5("การตั้งค่า"),
+            divider(),
+            Profile6("ข้อเสนอเเนะ"),
             SizedBox(
               height: 15,
             ),
@@ -233,15 +95,7 @@ class _P5State extends State<P5> {
               child: Container(
                 height: 45,
                 width: 300,
-                child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15),
-                      ),
-                      primary: Colors.red),
-                  child: Text('ออกจากระบบ'),
-                  onPressed: () {},
-                ),
+                child: ElevatedButton1(),
               ),
             ),
             SizedBox(
