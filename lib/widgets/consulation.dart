@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_project_1/screen_child/P3_screen.dart';
 
 import 'package:flutter_project_1/widgets/class_consulation.dart';
 
@@ -34,9 +35,6 @@ class ConsultationCard extends StatelessWidget {
                       bottomLeft: Radius.circular(12.0),
                     ),
                   ),
-                  // child: Text(
-                  //   "\$${consultation.price}",
-                  // ),
                 ),
               ),
               Positioned(
@@ -75,7 +73,10 @@ class ConsultationCard extends StatelessWidget {
             ],
           ),
         ),
-        onTap: () {},
+        onTap: () {
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => P3Screen()));
+        },
       ),
     );
   }
