@@ -9,8 +9,8 @@ class Consultation {
 List<Consultation> consultationList = [
   Consultation(
     title: "Dr. Ronan",
-    image: "assets/images/Ronan.png",
-    subtitle: "ผู้เชี่ยวชาญทางด้านหมีมากกว่า3,000ปี",
+    image: "assets/images/Doctor.png",
+    subtitle: "ผู้เชี่ยวชาญทางด้านจิตเวช",
   ),
   Consultation(
     title: "Dental trouble?",
