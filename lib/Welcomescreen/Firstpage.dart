@@ -16,17 +16,18 @@ class _FirstpageState extends State<Firstpage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.green[300],
       body: SingleChildScrollView(
         child: Stack(
           children: [
             Container(
               height: MediaQuery.of(context).size.longestSide,
               width: MediaQuery.of(context).size.shortestSide,
-              decoration: BoxDecoration(
+              /*decoration: BoxDecoration(
                 image: DecorationImage(
                     image: AssetImage("assets/images/BG6.png"),
                     fit: BoxFit.cover),
-              ),
+              ),*/
             ),
             SafeArea(
               child: Padding(

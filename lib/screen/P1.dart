@@ -54,7 +54,7 @@ class _P1State extends State<P1> {
             builder: (context) => WritePost())); //กำหนดนำทางปุ่มโพส
   }
 
-  String text1 = 'User!'; //กำหนดตัวเเปร
+  String text1 = 'Ronan'; //กำหนดตัวเเปร
 
   @override
   Widget build(BuildContext context) {
