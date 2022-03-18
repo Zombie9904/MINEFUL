@@ -111,7 +111,7 @@ class _FirstpageState extends State<Firstpage> {
                       child: Row(
                         children: [
                           Text(
-                            "By continuing you agree to Mindful",
+                            "By continuing, you agree to Mindful",
                             style: TextStyle(
                                 color: Colors.white,
                                 fontWeight: FontWeight.bold,
